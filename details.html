@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Business Dashboard Details</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link href="css/dashboard.css" rel="stylesheet" type="text/css">
+<script src="js/highstock.js"></script>
+<script src="js/jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="back-to-top" class="back-to-top"><a href="javascript:void(0)"><img src="images/back-to-top.png"/></a></div>
+    
+		<div class="header-advance-area">
+			<div class="header-top-area">
+				<a href="index.html" class="main-link"><img src="images/logo.png" alt=""></a>
+                <div class="header-title">Business Dashboard</div>
+				<div class="header-right">
+					<ul>
+						<li>
+							<a href="javascript:void(0)"><img src="images/profile.jpg"/><span>Aastha Verma <i class="fa fa-angle-down"></i></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+        <div class="all-content-wrapper">
+            <div class="detail-wrapper">
+                <div class="breadcrumb-wrapper">
+                   <ol>
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="listing.html">Batch</a></li>
+                       <li class="active">Executive Development Program</li>
+                   </ol>     
+                </div>
+                <div class="detail-container">
+                    <div class="landing-title">
+                        <div>Executive Development Program</div>
+                        <div class="info-block">
+                            <div class="block">
+                                <div>Institute Name</div>
+                                <div>XLRI Jamshedpur</div>
+                            </div>
+                            <div class="block">
+                                <div>Batch Code</div>
+                                <div>XLRI-PM-03-1218-01</div>
+                            </div>
+                            <div class="block">
+                                <div>Start Date</div>
+                                <div>2018-12-02</div>
+                            </div>
+                            <div class="block">
+                                <div>Completion Date</div>
+                                <div>2019-06-02</div>
+                            </div>
+                            
+                        </div>
+                    </div>             
+
+                    <div class="top-info-block">
+                       <ul>
+                            <li class="first">
+                                <div class="title-block">
+                                    <i class="fa fa-money"></i>
+                                    <div class="block-content">
+                                        <div class="title-value">Revenue</div>
+                                    </div>
+                                </div>
+                                <div class="bottom-block">
+                                    <div class="block">
+                                        <div>Target:<span>1200</span></div>
+                                        <div class="progress-cls">
+                                            <div class="progress-bar" style="width:30%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div>Actual:<span>400</span></div>
+                                        <div class="progress-cls">
+                                            <div class="progress-bar" style="width:30%"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                            <li class="second">
+                                <div class="title-block">    
+                                    <i class="fa fa-thumbs-up"></i>
+                                    <div class="block-content">
+                                        <div class="title-value">Enrollments</div>
+                                    </div>
+                                </div>
+                                <div class="bottom-block">
+                                    <div class="block">
+                                        <div>Target:<span>1200</span></div>
+                                        <div class="progress-cls">
+                                            <div class="progress-bar" style="width:30%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div>Actual:<span>400</span></div>
+                                        <div class="progress-cls">
+                                            <div class="progress-bar" style="width:30%"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="third">
+                                <div class="title-block">  
+                                    <i class="fa fa-users"></i>
+                                    <div class="block-content">
+                                        <div class="title-value">CPA</div>
+                                    </div>
+                                </div>
+                                <div class="bottom-block">
+                                    <div class="block">
+                                        <div>Target:<span>1200</span></div>
+                                        <div class="progress-cls">
+                                            <div class="progress-bar" style="width:30%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div>Actual:<span>400</span></div>
+                                        <div class="progress-cls">
+                                            <div class="progress-bar" style="width:30%"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="fourth">
+                                <div class="title-block">  
+                                    <i class="fa fa-users"></i>
+                                    <div class="block-content">
+                                        <div class="title-value">CPL</div>
+                                    </div>
+                                </div>
+                                <div class="bottom-block">
+                                    <div class="block">
+                                        <div>Target:<span>1200</span></div>
+                                        <div class="progress-cls">
+                                            <div class="progress-bar" style="width:30%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div>Actual:<span>400</span></div>
+                                        <div class="progress-cls">
+                                            <div class="progress-bar" style="width:30%"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="bottom-info-block">
+                       <ul>
+                            <li class="first">
+                                <div class="chart-title">
+                                    <div>Source Mix Revenue<span>(INR Lakhs)</span></div>
+                                </div>
+                                <div class="tabs-block">
+                                    <div id="chart2" style="min-width:100%; height: 300px;"></div>
+                                </div>
+                            </li>
+                            <li class="second">
+                                <div class="chart-title">
+                                    <div class="tabs">
+                                        <a href="javascript:void(0)" class="revenue-tab selected">Revenue</a>
+                                        <a href="javascript:void(0)" class="enrollments-tab">Enrollments</a>
+                                    </div>
+                                </div>
+                                <div class="tabs-block">
+                                    <div class="chart-revenue">
+                                    <div class="chart-title">Revenue Details <span>(INR Lakhs)</span></div>
+                                    <div id="chart1" style="min-width:100%; height: 300px;"></div>
+                                     </div>
+                                     <div class="chart-enrollments">
+                                        <div class="chart-title">Enrollments</div>
+                                    <div id="chart3" style="min-width:100%; height: 300px;"></div>
+                                    </div>  
+                                </div> 
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+
+                </div>     
+            </div>
+            
+
+        </div>
+
+
+          
+
+<script>
+
+jQuery(document).ready(function(){
+
+	
+
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop()) {
+            jQuery('.back-to-top:hidden').stop(true, true).fadeIn();
+        } else {
+            jQuery('.back-to-top').stop(true, true).fadeOut();
+        }
+    });
+
+    jQuery('.back-to-top a').on('click', function(){
+        jQuery('html, body').stop().animate({
+            scrollTop: 0
+        }, 500, 'linear');
+        return false;
+});
+
+    jQuery('.tabs .revenue-tab').click(function(){
+        jQuery(this).addClass('selected');
+        jQuery('.tabs .enrollments-tab').removeClass('selected');
+        jQuery('.tabs-block .chart-revenue').show();
+        jQuery('.tabs-block .chart-enrollments').hide();
+    });
+    jQuery('.tabs .enrollments-tab').click(function(){
+        jQuery(this).addClass('selected');
+        jQuery('.tabs .revenue-tab').removeClass('selected');
+        jQuery('.tabs-block .chart-enrollments').show();
+        jQuery('.tabs-block .chart-revenue').hide();
+    });
+
+    
+});
+
+
+
+
+	Highcharts.setOptions({
+   colors: ['#2c324f', '#0097a7', '#DDDF00', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+
+
+});
+	
+
+Highcharts.chart('chart1', {
+    chart: {
+        type: 'column',
+        style: {
+            fontFamily: 'latobold',
+            fontSize:14
+        }
+    },
+    title: {
+        text: ''
+    },
+    credits: {
+        enabled: false
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: { 
+        categories: [
+            'Kanika Kathuria',
+            'Deepak Yadav',
+            'Rachit Vohra',
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Revenue (INR lakhs)'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:12px;  font-weight:bold;">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Target',
+        data: [28, 10, 60]
+
+    }, {
+        name: 'Actual',
+        data: [23, 6, 34]
+
+    }]
+});
+
+Highcharts.chart('chart2', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+        style: {
+            fontFamily: 'latobold',
+            fontSize:14
+        }
+    },
+    title: {
+        text: ''
+    },
+    credits: {
+        enabled: false
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.y}</b> <br/> Enrollments:<b>{point.myData}</b>'
+    },
+    colors: ['#067180', '#0ae1ff', '#ff9a25'], 
+    plotOptions: {
+        pie: {
+            size:'100%',
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            },
+            showInLegend: true
+        }
+    },
+    legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
+            x:0,
+            y:0,
+            floating: false,
+            borderWidth: 0,
+            
+        },
+    series: [{
+        name: 'INR',
+        colorByPoint: true,
+        data: [{
+            name: 'Call Center',
+            y: 61,
+            sliced: true,
+            selected: true,
+            myData : 10
+        }, {
+            name: 'Channel',
+            y: 11,
+            myData : 5
+        }, {
+            name: 'Corporate',
+            y: 10,
+            myData : 2
+        }]
+    }]
+});
+
+Highcharts.chart('chart3', {
+    chart: {
+        type: 'column',
+        style: {
+            fontFamily: 'latobold',
+            fontSize:14
+        }
+    },
+    title: {
+        text: ''
+    },
+    colors: ['#2c324f', '#0097a7'],
+    credits: {
+        enabled: false
+    },
+    subtitle: {
+        text: ''
+    },
+
+    xAxis: {
+        categories: [
+           'Kanika Kathuria',
+            'Deepak Yadav',
+            'Rachit Vohra',
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Enrollments'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:12px font-weight:bold;">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Target',
+        data: [26, 80, 95]
+
+    }, {
+        name: 'Actual',
+        data: [23, 10, 34]
+
+    }]
+});
+
+</script>
+</body>
+</html>

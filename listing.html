@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Business Listing</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link href="css/dashboard.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <div id="back-to-top" class="back-to-top"><a href="javascript:void(0)"><img src="images/back-to-top.png"/></a></div>
+    
+		<div class="header-advance-area">
+			<div class="header-top-area">
+				<a href="index.html" class="main-link"><img src="images/logo.png" alt=""></a>
+                <div class="header-title">Business Dashboard</div>
+				<div class="header-right">
+					<ul>
+						<li>
+							<a href="javascript:void(0)"><img src="images/profile.jpg"/><span>Aastha Verma <i class="fa fa-angle-down"></i></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+        <div class="all-content-wrapper">
+
+            <div class="left-wrapper">
+              
+               <div class="filterby-wrapper">
+                 <div class="filterby-title"><div>Filter by</div><a class="filter-viewall-link" href="javascript:void(0)">View all</a></div> 
+                 <div class="filterby-content">
+                     <div class="filter-by-date">
+                        <div class="block">
+                            <label>From</label>
+                            <input type="text" class="datepicker" placeholder="Enter Date" />
+                        </div>
+                        <div class="block">
+                            <label>To</label>
+                            <input type="text" class="datepicker" placeholder="Enter Date" />
+                        </div>
+                    </div>
+                     <ul>
+                         <li>
+                            <div class="heading-title"><div>Institute</div> <span></span></div>
+                            <div class="filter-options">
+                                <div class="filter-search">
+                                    <input type="search" placeholder="Search here" />
+                                </div>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">IIM Kashipur</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">IIM Lucknow</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">IIM Jammu</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">XLRI</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">MICA</span>
+                                </label>
+                                <div class="show-more-filter"><a href="#">10 more</a></div>
+                            </div>
+                         </li>
+
+                         <li>
+                            <div class="heading-title"><div>Batch</div><span></span></div>
+                            <div class="filter-options">
+                                <div class="filter-search">
+                                    <input type="search" placeholder="Search here" />
+                                </div>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">XLRI-PM-03-1218-01</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">HR-07-1018-01</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">SM-01-02-2018-01</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">PF-07-0119-01</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">TM-05-1218-01</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">LSCM-01-0219-01</span>
+                                </label>
+                                <div class="show-more-filter"><a href="#">10 more</a></div>
+                            </div>
+                         </li>
+
+                         <li>
+                            <div class="heading-title"><div>Source</div><span></span></div>
+                            <div class="filter-options">
+                                <div class="filter-search">
+                                    <input type="search" placeholder="Search here" />
+                                </div>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Channel</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Corporate</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Call Center</span>
+                                </label>
+                                <div class="show-more-filter"><a href="#">10 more</a></div>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="heading-title"><div>Vendor</div><span></span></div>
+                            <div class="filter-options">
+                                <div class="filter-search">
+                                    <input type="search" placeholder="Search here" />
+                                </div>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Facebook</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Google</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">TBS</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Infoedge</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">iimjobs</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Taboola</span>
+                                </label>
+                                <div class="show-more-filter"><a href="#">10 more</a></div>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="heading-title"><div>Status</div><span></span></div>
+                            <div class="filter-options">
+                                <div class="filter-search">
+                                    <input type="search" placeholder="Search here" />
+                                </div>
+                                <div class="legend-info">
+                                    <div class="closed"><i></i>Closed</div>
+                                    <div class="in-progress"><i></i>In Progress</div>
+                                    <div class="completed"><i></i>Completed</div>
+                                </div>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link"><i class="in-progress-symbol"></i>Enrollment in progress</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link"><i class="closed-symbol"></i>Enrollment Closed</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link"><i class="in-progress-symbol"></i>Classes in progress</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link"><i class="closed-symbol"></i>Classes Closed</span>
+                                </label>
+                                <div class="show-more-filter"><a href="#">10 more</a></div>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="heading-title"><div>Category</div><span></span></div>
+                            <div class="filter-options">
+                                <div class="filter-search">
+                                    <input type="search" placeholder="Search here" />
+                                </div>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Business Management</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Finance</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Analytics</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">HR</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Brand Sales & Marketing</span>
+                                </label>
+                                <div class="show-more-filter"><a href="#">10 more</a></div>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="heading-title"><div>Master Course</div><span></span></div>
+                            <div class="filter-options">
+                                <div class="filter-search">
+                                    <input type="search" placeholder="Search here" />
+                                </div>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Data Science</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Accounting & Auditing</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Digital Marketing</span>
+                                </label>
+                                <div class="show-more-filter"><a href="#">10 more</a></div>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="heading-title"><div>Type of course</div><span></span></div>
+                            <div class="filter-options">
+                                <div class="filter-search">
+                                    <input type="search" placeholder="Search here" />
+                                </div>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Self-Paced</span>
+                                </label>
+                                <label class="filter-label">
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox"></span>
+                                    <span class="filter-link">Centre Based</span>
+                                </label>
+                                <div class="show-more-filter"><a href="#">10 more</a></div>
+                            </div>
+                         </li>
+
+                         <li>
+                            <div class="heading-title"><div>Sales</div><span></span></div>
+                            <div class="filter-options">
+                               <ul class="main-menu">
+                                   <li>
+                                        <a href="javascript:void(0)" class="main-link"><i></i>Ritika Nayak</a>
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)" class="main-sub-link"><i></i>Deepak Yadav</a>
+                                                <ul>
+                                                    <li><a href="javascript:void(0)" class="sub-link"><i></i>Poonam Saxsena</a></li>
+                                                    <li><a href="javascript:void(0)" class="sub-link"><i></i>Ranjan Singh</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="main-sub-link"><i></i>Kanika Yadav</a>
+                                                <ul>
+                                                    <li><a href="javascript:void(0)" class="sub-link"><i></i>Rishi Batra</a></li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                   </li>
+                                   
+                               </ul>
+                            </div>
+                         </li>
+
+
+                     </ul>
+                 </div>
+
+              </div>
+
+
+
+            </div>
+
+            <div class="right-wrapper">
+                
+                
+             <div class="listing-wrapper">
+                <div class="listing-container">
+                   <div class="landing-title">
+                        <div>
+                        All Batches
+                        <div class="breadcrumb-wrapper">
+                           <ol>
+                               <li><a href="index.html">Home</a></li>
+                               <li class="active">Batch</li>
+                           </ol>     
+                        </div>
+                    </div>
+                    <div class="mob-view-all-filter"><a href="#"><i class="fas fa-filter"></i>view all filters</a></div>
+                   </div>             
+
+                   <ul>
+                       <li>
+                           <div class="left-block">
+                               <div class="top-block">
+                                   <div class="thumb"><i class="fa fa-users"></i></div>
+                                   <div class="thumb-content">
+                                       <div class="title"><a href="details.html">Executive Development Program...</a><span>Enrollment Closed</span></div>
+                                       <div class="block">
+                                            <div class="institute-name">Institute Name<span>XLRI Jamshedpur</span></div>
+                                        </div>
+                                         <div class="block">
+                                           <div class="batch-code">Batch Code<span>XLRI-PM-03-1218-01</span></div>
+                                        </div>
+                                     
+                                   </div>
+                               </div>
+                               <div class="bottom-block">
+                                     <div class="block">
+                                        <div class="batch-date">Enrollment start date<span>2018-12-02</span></div>
+                                        <div class="batch-date">Enrollment end date<span>2019-06-02</span></div>
+                                        <div class="days-left">Days left<span>60</span></div>
+                                    </div>
+                               </div>
+                           </div>
+                           <div class="right-block">
+                                <div class="topblock">
+                                   <div class="block">
+                                       <div>Target Revenue</div>
+                                       <div>2200<span>(INR Lakhs)</span></div>
+                                   </div>
+                                   <div class="block">
+                                       <div>Actual Revenue</div>
+                                       <div>300<span>(INR Lakhs)</span></div>
+                                   </div>
+                                </div>
+                                <div class="bottom-block">
+                                     <div class="block">
+                                        <div class="batch-fees">Batch Fees (INR)<span>90,000</span></div>
+                                        <div class="batch-fees">Batch Fees (USD)<span>1,900.00</span></div>
+                                    </div>
+                               </div>
+
+                           </div>
+                       </li>
+                       <li>
+                           <div class="left-block">
+                               <div class="top-block">
+                                   <div class="thumb"><i class="fa fa-users"></i></div>
+                                   <div class="thumb-content">
+                                       <div class="title"><a href="details.html">Executive Development Program...</a><span>Enrollment Closed</span></div>
+                                       <div class="block">
+                                            <div class="institute-name">Institute Name<span>XLRI Jamshedpur</span></div>
+                                        </div>
+                                         <div class="block">
+                                           <div class="batch-code">Batch Code<span>XLRI-PM-03-1218-01</span></div>
+                                        </div>
+                                     
+                                   </div>
+                               </div>
+                               <div class="bottom-block">
+                                     <div class="block">
+                                        <div class="batch-date">Enrollment start date<span>2018-12-02</span></div>
+                                        <div class="batch-date">Enrollment end date<span>2019-06-02</span></div>
+                                        <div class="days-left">Days left<span>60</span></div>
+                                    </div>
+                               </div>
+                           </div>
+                           <div class="right-block">
+                                <div class="topblock">
+                                   <div class="block">
+                                       <div>Target Revenue</div>
+                                       <div>2200<span>(INR Lakhs)</span></div>
+                                   </div>
+                                   <div class="block">
+                                       <div>Actual Revenue</div>
+                                       <div>300<span>(INR Lakhs)</span></div>
+                                   </div>
+                                </div>
+                                <div class="bottom-block">
+                                     <div class="block">
+                                        <div class="batch-fees">Batch Fees (INR)<span>90,000</span></div>
+                                        <div class="batch-fees">Batch Fees (USD)<span>1,900.00</span></div>
+                                    </div>
+                               </div>
+
+                           </div>
+                       </li>
+                       <li>
+                           <div class="left-block">
+                               <div class="top-block">
+                                   <div class="thumb"><i class="fa fa-users"></i></div>
+                                   <div class="thumb-content">
+                                       <div class="title"><a href="details.html">Executive Development Program...</a><span>Enrollment Closed</span></div>
+                                       <div class="block">
+                                            <div class="institute-name">Institute Name<span>XLRI Jamshedpur</span></div>
+                                        </div>
+                                         <div class="block">
+                                           <div class="batch-code">Batch Code<span>XLRI-PM-03-1218-01</span></div>
+                                        </div>
+                                     
+                                   </div>
+                               </div>
+                               <div class="bottom-block">
+                                     <div class="block">
+                                        <div class="batch-date">Enrollment start date<span>2018-12-02</span></div>
+                                        <div class="batch-date">Enrollment end date<span>2019-06-02</span></div>
+                                        <div class="days-left">Days left<span>60</span></div>
+                                    </div>
+                               </div>
+                           </div>
+                           <div class="right-block">
+                                <div class="topblock">
+                                   <div class="block">
+                                       <div>Target Revenue</div>
+                                       <div>2200<span>(INR Lakhs)</span></div>
+                                   </div>
+                                   <div class="block">
+                                       <div>Actual Revenue</div>
+                                       <div>300<span>(INR Lakhs)</span></div>
+                                   </div>
+                                </div>
+                                <div class="bottom-block">
+                                     <div class="block">
+                                        <div class="batch-fees">Batch Fees (INR)<span>90,000</span></div>
+                                        <div class="batch-fees">Batch Fees (USD)<span>1,900.00</span></div>
+                                    </div>
+                               </div>
+
+                           </div>
+                       </li>
+                   </ul>
+               </div>         
+             </div>   
+           </div> 
+        </div>
+
+
+
+
+    <!-- Filter View All Dialog-->
+        <div class="filter-dialog-wrapper">
+            <div class="filter-dialog-container">
+                <a href="javascript:void(0)" class="close-link"><i class="fa fa-times"></i></a>
+                <div class="left-section">
+                    <div class="heading-title">Filter By</div>
+                    <ul>
+                        <li><a href="javascript:void(0)" id="institute" class="selected">Institute</a></li>
+                        <li><a href="javascript:void(0)" id="batch" class="inactive">Batch</a></li>
+                        <li><a href="javascript:void(0)" id="source" class="inactive">Source</a></li>
+                        <li><a href="javascript:void(0)" id="vendor" class="inactive">Vendor</a></li>
+                        <li><a href="javascript:void(0)" id="status" class="inactive">Status</a></li>
+                        <li><a href="javascript:void(0)" id="category" class="inactive">Category</a></li>
+                        <li><a href="javascript:void(0)" id="mastercourse" class="inactive">Master Course</a></li>
+                        <li><a href="javascript:void(0)" id="typeofcourse" class="inactive">Type of Course</a></li>
+                    </ul>
+                </div>
+                <div class="right-section">
+                    <div class="institute-right">
+                        
+                            <ul id="institute-filter" class="filter-hidden">
+                               <li>
+                                    <div class="heading-title">Institute</div>
+                                    <div class="filter-options">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">IIM Kashipur</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">IIM Lucknow</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">IIM Jammu</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">XLRI</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">MICA</span>
+                                        </label>
+                                    </div>
+                                 </li>
+                            </ul>
+                        
+
+                        
+                            <ul id="batch-filter" class="filter-hidden">
+                               <li>
+                                    <div class="heading-title">Batch</div>
+                                    <div class="filter-options">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">XLRI-PM-03-1218-01</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">HR-07-1018-01</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">SM-01-02-2018-01</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">PF-07-0119-01</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">TM-05-1218-01</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">LSCM-01-0219-01</span>
+                                        </label>
+                                    </div>
+                                 </li>
+                            </ul>
+
+
+                            <ul id="source-filter" class="filter-hidden">
+                               <li>
+                                    <div class="heading-title">Source</div>
+                                    <div class="filter-options">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Channel</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Corporate</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Call Center</span>
+                                        </label>
+                                   </div>
+                                 </li>
+                            </ul>
+
+                            <ul id="vendor-filter" class="filter-hidden">
+                               <li>
+                                    <div class="heading-title">Vendor</div>
+                                    <div class="filter-options">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Facebook</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Google</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">TBS</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Infoedge</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">iimjobs</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Taboola</span>
+                                        </label>
+                                    </div>
+                                 </li>
+                            </ul>
+
+
+                            <ul id="status-filter" class="filter-hidden">
+                               <li>
+                                    <div class="heading-title">Status</div>
+                                    <div class="filter-options">
+                                
+                                        <div class="legend-info">
+                                            <div class="closed"><i></i>Closed</div>
+                                            <div class="in-progress"><i></i>In Progress</div>
+                                            <div class="completed"><i></i>Completed</div>
+                                        </div>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link"><i class="in-progress-symbol"></i>Enrollment in progress</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link"><i class="closed-symbol"></i>Enrollment Closed</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link"><i class="in-progress-symbol"></i>Classes in progress</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link"><i class="closed-symbol"></i>Classes Closed</span>
+                                        </label>
+                                    </div>
+                                 </li>
+                            </ul>
+
+                            <ul id="category-filter" class="filter-hidden">
+                               <li>
+                                    <div class="heading-title">Category</div>
+                                    <div class="filter-options">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Business Management</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Finance</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Analytics</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">HR</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Brand Sales & Marketing</span>
+                                        </label>
+                                    </div>
+                                 </li>
+                            </ul>
+
+
+                            <ul id="mastercourse-filter" class="filter-hidden">
+                               <li>
+                                    <div class="heading-title">Master Course</div>
+                                    <div class="filter-options">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Data Science</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Accounting & Auditing</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Digital Marketing</span>
+                                        </label>
+                                    </div>
+                                 </li>
+                            </ul>
+
+                            <ul id="typeofcourse-filter" class="filter-hidden">
+                               <li>
+                                    <div class="heading-title">Type of Course</div>
+                                    <div class="filter-options">
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Self-Paced</span>
+                                        </label>
+                                        <label class="filter-label">
+                                            <input type="checkbox">
+                                            <span class="filter-checkbox"></span>
+                                            <span class="filter-link">Centre Based</span>
+                                        </label>
+                                    </div>
+                                 </li>
+                            </ul>
+
+
+                       <div class="filter-actions">
+                           <a href="javascript:void(0)">Cancel</a>
+                           <button>Apply</button>
+                       </div>     
+                            
+
+                    </div>
+                </div>
+
+
+            </div>    
+        </div>
+        <div class="maskbg"></div>
+    <!-- Filter View All Dialog-->
+<script>
+
+jQuery(document).ready(function(){
+
+	jQuery('.filterby-content .heading-title').click(function(){
+
+		jQuery(this).toggleClass('active');
+	});
+
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop()) {
+            jQuery('.back-to-top:hidden').stop(true, true).fadeIn();
+        } else {
+            jQuery('.back-to-top').stop(true, true).fadeOut();
+        }
+    });
+
+    jQuery('.back-to-top a').on('click', function(){
+        jQuery('html, body').stop().animate({
+            scrollTop: 0
+        }, 500, 'linear');
+        return false;
+});
+
+   
+
+    jQuery('.filter-dialog-wrapper .close-link ,.filter-actions a').click(function(){
+        jQuery('.filter-dialog-wrapper').hide();
+        jQuery('.maskbg').hide();
+    });
+
+
+    jQuery('.filter-viewall-link').click(function(){
+        jQuery('.filter-dialog-wrapper').show();
+        jQuery('.maskbg').show();
+    });
+
+    jQuery('.mob-view-all-filter a').click(function(){
+        jQuery('.filter-dialog-wrapper').show();
+        jQuery('.maskbg').show();
+    });
+   
+
+
+    jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a:not(:first)').addClass('inactive');
+    jQuery('.filter-hidden').hide();
+    jQuery('.filter-hidden:first').show();
+
+    jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a').click(function(){
+      var t = jQuery(this).attr('id');
+      if(jQuery(this).hasClass('inactive')){ //this is the start of our condition 
+        jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a').addClass('inactive');           
+        jQuery(this).removeClass('inactive');
+
+        jQuery('.filter-hidden').hide();
+        jQuery('#'+ t + '-filter').fadeIn('slow');
+     }
+    });
+
+});
+
+</script>
+</body>
+</html>

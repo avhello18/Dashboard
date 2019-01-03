@@ -998,7 +998,7 @@ svg:not(:root) { overflow: hidden;}
 .detail-wrapper .detail-container .bottom-info-block ul li.first{width: 100%;}
 .detail-wrapper .detail-container .landing-title{ flex-direction: column; }
 .detail-wrapper .detail-container .landing-title .info-block{margin-top: 15px;}
-
+.dashboard-wrapper .dashboard-container .qualitytable-wrapper{overflow-y: auto;}
 }
 
 

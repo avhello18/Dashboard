@@ -571,6 +571,16 @@ svg:not(:root) { overflow: hidden;}
 
 
 
+.dashboard-wrapper .dashboard-container .block-wrapper14{box-shadow: 0 1px 3px rgba(33,33,33,.5); background-color: #fff; border-radius: 5px; border: 1px solid #e7e7e7; padding: 20px; display: flex; width: 100%; flex-direction: column; margin-top:20px;}
+.dashboard-wrapper .dashboard-container .block-wrapper14 .view-detail-link{display: flex; width: 100%; justify-content: flex-end; align-items: flex-end; margin-top:10px;}
+.dashboard-wrapper .dashboard-container .block-wrapper14 .view-detail-link a i{margin-left:3px; font-size: 12px;}
+.dashboard-wrapper .dashboard-container .block-wrapper14 .view-detail-link a{text-decoration: underline; text-transform: uppercase; font-size:12px;color:#2c324f; font-family: 'latobold';}
+.dashboard-wrapper .dashboard-container .block-wrapper14 .view-detail-link a:hover{text-decoration: none;}
+.dashboard-wrapper .dashboard-container .block-wrapper14 .chart-title{display:flex; width: 100%; margin-bottom: 15px; text-transform: uppercase; font-size:14px; color: #4d4d4d; font-family: 'latobold';}
+.dashboard-wrapper .dashboard-container .block-wrapper14 .chart-title span{margin-left:2px; text-transform:capitalize; font-size:12px; color: #999; font-family: 'latoregular';}
+
+
+
 .dashboard-wrapper .dashboard-container .block-wrapper5{display: flex; flex-direction: column; width: 100%; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(33,33,33,.5); background-color: #fff; border-radius: 5px; border: 1px solid #e7e7e7; padding: 20px;}
 .dashboard-wrapper .dashboard-container .block-wrapper5 .block-main{display: flex; width: 100%;}
 .dashboard-wrapper .dashboard-container .block-wrapper5 .block-left{display: flex; width: 22%;}

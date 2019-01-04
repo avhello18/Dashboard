@@ -979,7 +979,7 @@
                                                            <div class="chart-title">
                                                               <div>
                                                                 Corporate Enrollments
-                                                                <span>(BDM wise)</span>
+                                                                <span>(Manager wise)</span>
                                                                 </div>
                                                             </div>
                                                             <div class="tabs-block">
@@ -2195,6 +2195,7 @@ Highcharts.chart('chart12', {
 
 
 Highcharts.chart('chart13', {
+
     chart: {
         type: 'column',
         style: {
@@ -2202,55 +2203,57 @@ Highcharts.chart('chart13', {
             fontSize:14
         }
     },
+
+     credits: {
+        enabled: false
+    },
     title: {
         text: ''
     },
-    credits: {
-        enabled: false
-    },
-    subtitle: {
-        text: ''
-    },
-    colors: ['#2c324f', '#0097a7'],
+    colors: ['#2c324f', '#0097a7','#ff9a25', '#43841c'],
     xAxis: {
-        categories: [
-            'Ankit',
-            'Amit',
-            'Anirudh',
-            'Abhishek',
-        ],
-        crosshair: true
+        categories: ['Ankit', 'Amit', 'Anirudh', 'Abhishek']
     },
+
     yAxis: {
         gridLineWidth: 0,
         minorGridLineWidth:0,
+        allowDecimals: false,
         min: 0,
         title: {
             text: 'Enrollments'
         }
     },
+
     tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y}</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
-    },
-    plotOptions: {
-        column: {
-            pointPadding: 0.2,
-            borderWidth: 0
+        formatter: function () {
+            return '<b>' + this.x + '</b><br/>' +
+                this.series.name + ': ' + this.y
         }
     },
+
+    plotOptions: {
+        column: {
+            stacking: 'normal'
+        }
+    },
+
     series: [{
-        name: 'Target',
-        data: [29, 17, 56, 68]
-
+        name: 'Nominated Target',
+        data: [5, 3, 4, 7],
+        stack: 'male'
     }, {
-        name: 'Actual',
-        data: [23, 10, 34, 68]
-
+        name: 'Nominated Actual',
+        data: [3, 4, 4, 2],
+        stack: 'male'
+    }, {
+        name: 'Dedicated Target',
+        data: [2, 5, 6, 2],
+        stack: 'female'
+    }, {
+        name: 'Dedicated Actual',
+        data: [3, 2, 4, 4],
+        stack: 'female'
     }]
 });
 
@@ -2875,8 +2878,13 @@ Highcharts.chart('chart7', {
 Highcharts.chart('chart8', {
 
     chart: {
-        type: 'column'
+        type: 'column',
+        style: {
+            fontFamily: 'latobold',
+            fontSize:14
+        }
     },
+
      credits: {
         enabled: false
     },
@@ -2889,10 +2897,12 @@ Highcharts.chart('chart8', {
     },
 
     yAxis: {
+        gridLineWidth: 0,
+        minorGridLineWidth:0,
         allowDecimals: false,
         min: 0,
         title: {
-            text: 'Number of fruits'
+            text: 'Revenue'
         }
     },
 

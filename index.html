@@ -2876,63 +2876,58 @@ Highcharts.chart('chart7', {
 });
 
 Highcharts.chart('chart8', {
+
     chart: {
-        type: 'column',
-        style: {
-            fontFamily: 'latobold',
-            fontSize:14
-        }
+        type: 'column'
+    },
+     credits: {
+        enabled: false
     },
     title: {
         text: ''
     },
-    credits: {
-        enabled: false
-    },
-    subtitle: {
-        text: ''
-    },
-    colors: ['#2c324f', '#0097a7'],
+    colors: ['#2c324f', '#0097a7','#ff9a25', '#43841c'],
     xAxis: {
-        categories: [
-            'Ankit',
-            'Amit',
-            'Anirudh',
-            'Abhishek',
-            
-        ],
-        crosshair: true
+        categories: ['Ankit', 'Amit', 'Anirudh', 'Abhishek']
     },
+
     yAxis: {
-         gridLineWidth: 0,
-        minorGridLineWidth:0,
+        allowDecimals: false,
         min: 0,
         title: {
-            text: 'Revenue'
+            text: 'Number of fruits'
         }
     },
+
     tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
+        formatter: function () {
+            return '<b>' + this.x + '</b><br/>' +
+                this.series.name + ': ' + this.y
+        }
     },
+
     plotOptions: {
         column: {
-            pointPadding: 0.2,
-            borderWidth: 0
+            stacking: 'normal'
         }
     },
+
     series: [{
-        name: 'Target',
-        data: [49.9, 71.5, 106.4, 129.2]
-
+        name: 'Nominated Target',
+        data: [5, 3, 4, 7],
+        stack: 'male'
     }, {
-        name: 'Actual',
-        data: [83.6, 78.8, 98.5, 93.4]
-
+        name: 'Nominated Actual',
+        data: [3, 4, 4, 2],
+        stack: 'male'
+    }, {
+        name: 'Dedicated Target',
+        data: [2, 5, 6, 2],
+        stack: 'female'
+    }, {
+        name: 'Dedicated Actual',
+        data: [3, 2, 4, 4],
+        stack: 'female'
     }]
 });
 

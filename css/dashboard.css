@@ -409,7 +409,7 @@ svg:not(:root) { overflow: hidden;}
 .dashboard-wrapper .dashboard-container .block-wrapper11{display: flex; flex-direction: column; width: 50%; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(33,33,33,.5); background-color: #fff; border-radius: 5px; border: 1px solid #e7e7e7; padding: 20px;}
 .dashboard-wrapper .dashboard-container .block-wrapper11 .block-main{display: flex; width: 100%;}
 .dashboard-wrapper .dashboard-container .block-wrapper11 .block-left{display: flex; width: 22%;}
-.dashboard-wrapper .dashboard-container .block-wrapper11 .block-right{display: flex; width: 100%; margin-left: 20px; padding:0px; flex-direction: column;}
+.dashboard-wrapper .dashboard-container .block-wrapper11 .block-right{display: flex; width: 100%; margin-left:0px; padding:0px; flex-direction: column;}
 .dashboard-wrapper .dashboard-container .block-wrapper11 .block-right ul{margin:0; padding:0;}
 .dashboard-wrapper .dashboard-container .block-wrapper11 .block-right ul li{list-style-type:none; margin:0; padding:0;}
 .dashboard-wrapper .dashboard-container .block-wrapper11 .block-left ul{width:100%; display: flex; margin:0; background-color: #fff; flex-direction: column;}
@@ -938,6 +938,7 @@ svg:not(:root) { overflow: hidden;}
     .detail-wrapper .detail-container .landing-title{border:1px solid #e7e7e7}
   .tabs-wrapper ul li{margin-left: 0px;}
   .tabs-wrapper ul li a{padding:7px 10px 7px 10px;}
+  .sales-tabs-wrapper ul li a{padding:4px 10px;}
   .dashboard-wrapper .dashboard-container .block-wrapper1 .tab-content{flex-direction: column;}
   .dashboard-wrapper .dashboard-container .block-wrapper1 .block-left{width:100%; flex-direction: row; margin-bottom: 20px;}
   .dashboard-wrapper .dashboard-container .block-wrapper1 .block-left ul{flex-direction: column;}

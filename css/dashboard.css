@@ -208,6 +208,7 @@ svg:not(:root) { overflow: hidden;}
 /*Breadcrumb Css*/
 
 /*Applied Filter*/
+.listing-wrapper .applied-filter-wrapper{margin-top: 10px;}
 .applied-filter-wrapper{display: flex; width: 100%; margin-bottom:10px; align-items: center;}
 .applied-filter-wrapper label{color:#010101; font-size: 12px; text-transform: uppercase; margin-right: 10px;}
 .applied-filter-wrapper div{display: flex; align-items:center; padding: 5px; background-color: #e7e7e7; margin: 0 5px 0px 0;}

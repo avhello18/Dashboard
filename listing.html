@@ -4,7 +4,9 @@
 <title>Business Listing</title>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
 <link href="css/dashboard.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
@@ -347,137 +349,94 @@
                     <div class="mob-view-all-filter"><a href="#"><i class="fas fa-filter"></i>view all filters</a></div>
                    </div>             
 
-                   <ul>
-                       <li>
-                           <div class="left-block">
-                               <div class="top-block">
-                                   <div class="thumb"><i class="fa fa-users"></i></div>
-                                   <div class="thumb-content">
-                                       <div class="title"><a href="details.html">Executive Development Program...</a><span>Enrollment Closed</span></div>
-                                       <div class="block">
-                                            <div class="institute-name">Institute Name<span>XLRI Jamshedpur</span></div>
-                                        </div>
-                                         <div class="block">
-                                           <div class="batch-code">Batch Code<span>XLRI-PM-03-1218-01</span></div>
-                                        </div>
-                                     
-                                   </div>
-                               </div>
-                               <div class="bottom-block">
-                                     <div class="block">
-                                        <div class="batch-date">Enrollment start date<span>2018-12-02</span></div>
-                                        <div class="batch-date">Enrollment end date<span>2019-06-02</span></div>
-                                        <div class="days-left">Days left<span>60</span></div>
+                   <div class="listing-table-wrapper">
+                       
+                       <table id="listing-table" class="display">
+                        <thead>
+                            <tr>
+                                <th>Course Details</th>
+                                <th>Campaign End Date</th>
+                                <th>Campaign Start Date</th>
+                                <th>Batch Fees</th>
+                                <th>Days Left</th>
+                                <th>Target Revenue</th>
+                                <th>Actual Revenue</th>
+                                <th>% Achieved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="course-detail-block">
+                                        <a href="#">EDP</a>
+                                        <div>XLRI Jamshedpur</div>
+                                        <div>XLRI-PM-0301218-01</div>
                                     </div>
-                               </div>
-                           </div>
-                           <div class="right-block">
-                                <div class="topblock">
-                                   <div class="block">
-                                       <div>Target Revenue</div>
-                                       <div>2200<span>(INR Lakhs)</span></div>
-                                   </div>
-                                   <div class="block">
-                                       <div>Actual Revenue</div>
-                                       <div>300<span>(INR Lakhs)</span></div>
-                                   </div>
-                                </div>
-                                <div class="bottom-block">
-                                     <div class="block">
-                                        <div class="batch-fees">Batch Fees (INR)<span>90,000</span></div>
-                                        <div class="batch-fees">Batch Fees (USD)<span>1,900.00</span></div>
+                                </td>
+                                <td>2019-06-02</td>
+                                <td>2018-12-02</td>
+                                <td>Rs.90,000</td>
+                                <td>60</td>
+                                <td><span>2200</span></td>
+                                <td><div class="actual-revenue-up">560 <i class="fas fa-long-arrow-alt-up"></i></div></td>
+                                <td><div class="achieved-up">30%</div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="course-detail-block">
+                                        <a href="#">EDP</a>
+                                        <div>XLRI Jamshedpur</div>
+                                        <div>XLRI-PM-0301218-01</div>
                                     </div>
-                               </div>
+                                </td>
+                                <td>2019-06-02</td>
+                                <td>2018-12-02</td>
+                                <td>Rs.90,000</td>
+                                <td>60</td>
+                                <td><span>2200</span></td>
+                                <td><div class="actual-revenue-down">560 <i class="fas fa-long-arrow-alt-down"></i></div></td>
+                                <td><div class="achieved-down">30%</div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="course-detail-block">
+                                        <a href="#">EDP</a>
+                                        <div>XLRI Jamshedpur</div>
+                                        <div>XLRI-PM-0301218-01</div>
+                                    </div>
+                                </td>
+                                <td>2019-06-02</td>
+                                <td>2018-12-02</td>
+                                <td>Rs.90,000</td>
+                                <td>60</td>
+                                <td><span>2200</span></td>
+                                <td><div class="actual-revenue-up">560 <i class="fas fa-long-arrow-alt-up"></i></div></td>
+                                <td><div class="achieved-up">30%</div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="course-detail-block">
+                                        <a href="#">EDP</a>
+                                        <div>XLRI Jamshedpur</div>
+                                        <div>XLRI-PM-0301218-01</div>
+                                    </div>
+                                </td>
+                                <td>2019-06-02</td>
+                                <td>2018-12-02</td>
+                                <td>Rs.90,000</td>
+                                <td>60</td>
+                                <td><span>2200</span></td>
+                                <td><div class="actual-revenue-up">560 <i class="fas fa-long-arrow-alt-up"></i></div></td>
+                                <td><div class="achieved-up">30%</div></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
 
-                           </div>
-                       </li>
-                       <li>
-                           <div class="left-block">
-                               <div class="top-block">
-                                   <div class="thumb"><i class="fa fa-users"></i></div>
-                                   <div class="thumb-content">
-                                       <div class="title"><a href="details.html">Executive Development Program...</a><span>Enrollment Closed</span></div>
-                                       <div class="block">
-                                            <div class="institute-name">Institute Name<span>XLRI Jamshedpur</span></div>
-                                        </div>
-                                         <div class="block">
-                                           <div class="batch-code">Batch Code<span>XLRI-PM-03-1218-01</span></div>
-                                        </div>
-                                     
-                                   </div>
-                               </div>
-                               <div class="bottom-block">
-                                     <div class="block">
-                                        <div class="batch-date">Enrollment start date<span>2018-12-02</span></div>
-                                        <div class="batch-date">Enrollment end date<span>2019-06-02</span></div>
-                                        <div class="days-left">Days left<span>60</span></div>
-                                    </div>
-                               </div>
-                           </div>
-                           <div class="right-block">
-                                <div class="topblock">
-                                   <div class="block">
-                                       <div>Target Revenue</div>
-                                       <div>2200<span>(INR Lakhs)</span></div>
-                                   </div>
-                                   <div class="block">
-                                       <div>Actual Revenue</div>
-                                       <div>300<span>(INR Lakhs)</span></div>
-                                   </div>
-                                </div>
-                                <div class="bottom-block">
-                                     <div class="block">
-                                        <div class="batch-fees">Batch Fees (INR)<span>90,000</span></div>
-                                        <div class="batch-fees">Batch Fees (USD)<span>1,900.00</span></div>
-                                    </div>
-                               </div>
+                   </div>
 
-                           </div>
-                       </li>
-                       <li>
-                           <div class="left-block">
-                               <div class="top-block">
-                                   <div class="thumb"><i class="fa fa-users"></i></div>
-                                   <div class="thumb-content">
-                                       <div class="title"><a href="details.html">Executive Development Program...</a><span>Enrollment Closed</span></div>
-                                       <div class="block">
-                                            <div class="institute-name">Institute Name<span>XLRI Jamshedpur</span></div>
-                                        </div>
-                                         <div class="block">
-                                           <div class="batch-code">Batch Code<span>XLRI-PM-03-1218-01</span></div>
-                                        </div>
-                                     
-                                   </div>
-                               </div>
-                               <div class="bottom-block">
-                                     <div class="block">
-                                        <div class="batch-date">Enrollment start date<span>2018-12-02</span></div>
-                                        <div class="batch-date">Enrollment end date<span>2019-06-02</span></div>
-                                        <div class="days-left">Days left<span>60</span></div>
-                                    </div>
-                               </div>
-                           </div>
-                           <div class="right-block">
-                                <div class="topblock">
-                                   <div class="block">
-                                       <div>Target Revenue</div>
-                                       <div>2200<span>(INR Lakhs)</span></div>
-                                   </div>
-                                   <div class="block">
-                                       <div>Actual Revenue</div>
-                                       <div>300<span>(INR Lakhs)</span></div>
-                                   </div>
-                                </div>
-                                <div class="bottom-block">
-                                     <div class="block">
-                                        <div class="batch-fees">Batch Fees (INR)<span>90,000</span></div>
-                                        <div class="batch-fees">Batch Fees (USD)<span>1,900.00</span></div>
-                                    </div>
-                               </div>
-
-                           </div>
-                       </li>
-                   </ul>
+                   
                </div>         
              </div>   
            </div> 
@@ -769,6 +728,8 @@
 <script>
 
 jQuery(document).ready(function(){
+
+    jQuery('#listing-table').DataTable();
 
 	jQuery('.filterby-content .heading-title').click(function(){
 

@@ -22,7 +22,7 @@ body {
 
 *{margin:0; padding:0; line-height: normal; box-sizing:border-box; }
 
-.back-to-top{display: none;right: 30px; bottom: 30px; padding: 22px; z-index: 99; position: fixed;}
+.back-to-top{display: none;right: 30px; bottom: 60px; padding: 0px; z-index: 99; position: fixed;}
 
 /*Wrapper Css*/
 .all-content-wrapper{margin-left:0px; transition: all 0.3s; padding:76px 10px 0px; display: flex; width:100%;}

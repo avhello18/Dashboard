@@ -4,10 +4,11 @@
 <title>Business Listing</title>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
 <link href="css/dashboard.css" rel="stylesheet" type="text/css">
+<link href = "css/jquery-ui.css" rel = "stylesheet">
 <link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.js"></script>
 <script src="js/jquery.dataTables.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<script src = "js/jquery-ui.js"></script>
 </head>
 <body>
     <div id="back-to-top" class="back-to-top"><a href="javascript:void(0)"><img src="images/back-to-top.png"/></a></div>
@@ -19,7 +20,7 @@
 				<div class="header-right">
 					<ul>
 						<li>
-							<a href="javascript:void(0)"><img src="images/profile.jpg"/><span>Aastha Verma <i class="fa fa-angle-down"></i></span></a>
+							<a href="javascript:void(0)"><img src="images/profile.jpg"/><span>Aastha Verma <i><img src="images/actiondd-arrow.png"></i></span></a>
 						</li>
 					</ul>
 				</div>
@@ -346,7 +347,7 @@
                            </ol>     
                         </div>
                     </div>
-                    <div class="mob-view-all-filter"><a href="#"><i class="fas fa-filter"></i>view all filters</a></div>
+                    <div class="mob-view-all-filter"><a href="#"><i></i>view all filters</a></div>
                    </div>             
                     <div class="applied-filter-wrapper">
                                 <div>
@@ -385,7 +386,7 @@
                                     </div>
                                 </td>
                                 <td><span>2200</span></td>
-                                <td><div class="actual-revenue-up">560 <i class="fas fa-long-arrow-alt-up"></i></div></td>
+                                <td><div class="actual-revenue-up">560 <i><img src="images/listing-up-arrow.png"></i></div></td>
                                 <td><div class="achieved-up">30%</div></td>
                                 <td>2019-06-02</td>
                                 <td>2018-12-02</td>
@@ -402,7 +403,7 @@
                                     </div>
                                 </td>
                                 <td><span>2200</span></td>
-                                <td><div class="actual-revenue-down">560 <i class="fas fa-long-arrow-alt-down"></i></div></td>
+                                <td><div class="actual-revenue-down">560 <i><img src="images/listing-down-arrow.png"></i></div></td>
                                 <td><div class="achieved-down">30%</div></td>
                                 <td>2019-06-02</td>
                                 <td>2018-12-02</td>
@@ -419,7 +420,7 @@
                                     </div>
                                 </td>
                                 <td><span>2200</span></td>
-                                <td><div class="actual-revenue-up">560 <i class="fas fa-long-arrow-alt-up"></i></div></td>
+                                <td><div class="actual-revenue-up">560 <i><img src="images/listing-up-arrow.png"></i></div></td>
                                 <td><div class="achieved-up">30%</div></td>
                                 <td>2019-06-02</td>
                                 <td>2018-12-02</td>
@@ -436,7 +437,7 @@
                                     </div>
                                 </td>
                                  <td><span>2200</span></td>
-                                <td><div class="actual-revenue-up">560 <i class="fas fa-long-arrow-alt-up"></i></div></td>
+                                <td><div class="actual-revenue-up">560 <i><img src="images/listing-down-arrow.png"></i></div></td>
                                 <td><div class="achieved-up">30%</div></td>
                                 <td>2019-06-02</td>
                                 <td>2018-12-02</td>
@@ -463,7 +464,7 @@
     <!-- Filter View All Dialog-->
         <div class="filter-dialog-wrapper">
             <div class="filter-dialog-container">
-                <a href="javascript:void(0)" class="close-link"><i class="fa fa-times"></i></a>
+                <a href="javascript:void(0)" class="close-link"><i><img src="images/applied-filter-remove.png"></i></a>
                 <div class="left-section">
                     <div class="heading-title">Filter By</div>
                     <ul>
@@ -782,6 +783,14 @@ jQuery(document).ready(function(){
     jQuery('.mob-view-all-filter a').click(function(){
         jQuery('.filter-dialog-wrapper').show();
         jQuery('.maskbg').show();
+    });
+
+    jQuery('.datepicker').datepicker({
+        changeYear: true,
+        changeMonth: true,
+        showButtonPanel: true,
+        
+
     });
    
 

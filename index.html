@@ -4,11 +4,11 @@
 <title>Business Dashboard</title>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
 <link href="css/dashboard.css" rel="stylesheet" type="text/css">
-<link href = "css/jquery-ui.css" rel = "stylesheet">
-<!-- <link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"> -->
+<link href = "css/jquery-ui.css" rel = "stylesheet" type="text/css">
+<link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.js"></script>
 <script src="js/highstock.js"></script>
-<!-- <script src="js/jquery.dataTables.min.js"></script> -->
+<script src="js/jquery.dataTables.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/funnel.js"></script>
 <script src = "js/jquery-ui.js"></script>
@@ -457,36 +457,147 @@
 
 
                               <div class="block-wrapper15" style="display: none;">
+                                <div class="block-main">
+                                    <div class="block-left">
+                                       <ul>
+                                           <li class="first">
+                                               <div class="title">Revenue</div>
+                                               <div class="title-value">
+                                                   <div class="block">
+                                                       <div>Target</div>
+                                                       <div>5000</div>
+                                                   </div>
+                                                   <div class="block">
+                                                       <div>Achieved</div>
+                                                       <div>20</div>
+                                                   </div>
+                                               </div>
+                                           </li>
+                                           <li class="second">
+                                               <div class="title">Enrollments</div>
+                                               <div class="title-value">
+                                                   <div class="block">
+                                                       <div>Target</div>
+                                                       <div>978.5</div>
+                                                   </div>
+                                                   <div class="block">
+                                                       <div>Achieved</div>
+                                                       <div>10</div>
+                                                   </div>
+                                               </div>
+                                           </li>
+                                           <li class="third">
+                                               <div class="title">AVG. TICKET SIZE</div>
+                                               <div class="title-value">50000</div>
+                                           </li>
+                                       </ul> 
+                                    </div>
 
-                                <div class="block-left">
+                                <div class="block-table-block">
+                                    <div class="block-title">SOURCE MIX REVENUE</div>
+                                    <table id="overview-table" class="display">
+                                        <thead>
+                                        <tr>
+                                            <th>Month</th>
+                                            <th>Call Center</th>
+                                            <th>Channel</th>
+                                            <th>Corporate</th>
+                                            <th>Referrals</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Jan</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feb</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>    
+                                        <tr>
+                                            <td>March</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>    
+                                        <tr>
+                                            <td>April</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>May</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>June</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>July</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aug</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>September</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>October</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>November</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>December</td>
+                                            <td>61</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div class="block-right">
                                    <ul>
                                        <li class="first">
-                                           <div class="title">Revenue</div>
-                                           <div class="title-value">
-                                               <div class="block">
-                                                   <div>Target</div>
-                                                   <div>5000</div>
-                                               </div>
-                                               <div class="block">
-                                                   <div>Achieved</div>
-                                                   <div>20</div>
-                                               </div>
-                                           </div>
-                                       </li>
-                                       <li class="second">
-                                           <div class="title">Enrollments</div>
-                                           <div class="title-value">
-                                               <div class="block">
-                                                   <div>Target</div>
-                                                   <div>978.5</div>
-                                               </div>
-                                               <div class="block">
-                                                   <div>Achieved</div>
-                                                   <div>10</div>
-                                               </div>
-                                           </div>
-                                       </li>
-                                       <li class="third">
                                            <div class="title">CPA</div>
                                            <div class="title-value">
                                                <div class="block">
@@ -499,7 +610,7 @@
                                                </div>
                                            </div>
                                        </li>
-                                       <li class="fourth">
+                                       <li class="second">
                                            <div class="title">CPL</div>
                                            <div class="title-value">
                                                <div class="block">
@@ -512,7 +623,7 @@
                                                </div>
                                            </div>
                                        </li>
-                                       <li class="fifth">
+                                       <li class="third">
                                            <div class="title">CONVERSION RATE</div>
                                            <div class="title-value">
                                                <div class="block">
@@ -525,34 +636,11 @@
                                                </div>
                                            </div>
                                        </li>
-                                       <li class="sixth">
-                                           <div class="title">AVG. TICKET SIZE</div>
-                                           <div class="title-value">50000</div>
-                                       </li>
+                                      
                                    </ul> 
                                 </div>
 
-                                <div class="block-table-block">
-                                    <table id="overview-table">
-                                        <thead>
-                                        <tr>
-                                            <th>Call Center</th>
-                                            <th>Channel</th>
-                                            <th>Corporate</th>
-                                            <th>Referrals</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>61</td>
-                                            <td>11</td>
-                                            <td>10</td>
-                                            <td>2</td>
-                                        </tr>
-                                    </tbody>
-                                    </table>
-
-                                </div>
+                            </div>
 
 
 
@@ -1672,19 +1760,17 @@
         <div class="maskbg"></div>
     <!-- Filter View All Dialog-->
 
-<script>
-$(document).ready(function () {
-
-jQuery('#overview-table').DataTable();
-
-
-    
- });
-</script>
 
 <script>
 
 jQuery(document).ready(function(){
+
+    jQuery('#overview-table').DataTable({
+        "pageLength":6,
+        "lengthChange": false
+    });
+
+
 
 	jQuery('.filterby-content .heading-title').click(function(){
 

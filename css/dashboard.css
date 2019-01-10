@@ -361,7 +361,8 @@ body {
 .dashboard-wrapper .dashboard-container .block-wrapper15 .block-table-block:last-child{margin-left: 15px;}
 .dashboard-wrapper .dashboard-container .block-wrapper15 .block-table-block .block-title{text-align: center; border-bottom:1px solid #e7e7e7; margin-bottom: 20px; padding-bottom: 10px;}
 .dashboard-wrapper .dashboard-container .block-wrapper15 .block-table-block .dataTables_wrapper {width:100%;}
-.dashboard-wrapper .dashboard-container .block-wrapper15 .block-table-block table{width:100%; border-collapse: collapse; border-bottom:0px none;}
+.dashboard-wrapper .dashboard-container .block-wrapper15 .block-table-block .dataTables_wrapper.no-footer .dataTables_scrollBody{border-bottom: 1px solid #ddd;}
+.dashboard-wrapper .dashboard-container .block-wrapper15 .block-table-block table{width:100%!important; border-collapse: collapse; border-bottom:0px none;}
 .dashboard-wrapper .dashboard-container .block-wrapper15 .block-table-block table th{border-bottom:0px none; padding:10px 10px; color:#1b1b1b; font-size:13px; font-family: 'latobold'; text-align: left;}
 .dashboard-wrapper .dashboard-container .block-wrapper15 .block-table-block table td{padding:10px; color:#1b1b1b; font-size:12px; vertical-align: top; text-align: left;}
 .dashboard-wrapper .dashboard-container .block-wrapper15 .block-table-block table td a{font-size:12px; color: #7cb0d7; text-decoration: underline;}

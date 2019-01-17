@@ -113,7 +113,7 @@ body {
 
 
 /*Left Filter Css*/
-.filterby-wrapper {display: flex; width: 100%; flex-direction: column; border-radius: 5px; background-color: #fff; box-shadow:0 1px 3px rgba(33,33,33,.5)}
+.filterby-wrapper {display: flex; width: 100%; max-width:260px;  flex-direction: column; border-radius: 5px; background-color: #fff; box-shadow:0 1px 3px rgba(33,33,33,.5)}
 .filterby-wrapper .filterby-title{ border-radius: 5px; background-color:#f9f9f9; border-top:1px solid #e7e7e7; margin-bottom:0px; padding:15px 20px 15px; text-transform:uppercase; font-family: 'latobold'; font-size: 16px; color: #4d4d4d; justify-content: space-between; align-items: center; display: flex;}
 .filterby-wrapper .filterby-title a{color: #303030; text-decoration: underline; font-size:12px; text-transform:none; }
 .filterby-wrapper .filterby-title a:hover{color: #303030; text-decoration: none;}

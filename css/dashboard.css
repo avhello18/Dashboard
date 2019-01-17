@@ -27,6 +27,7 @@ body {
 /*Wrapper Css*/
 .all-content-wrapper{margin-left:0px; transition: all 0.3s; padding:76px 10px 0px; display: flex; width:100%;}
 .all-content-wrapper .left-wrapper{ display: flex; flex-direction: column; width: 20%;}
+.all-content-wrapper.filter-fixed .left-wrapper{width:auto;}
 .all-content-wrapper.filter-fixed .filterby-wrapper{position: fixed;}
 .all-content-wrapper.filter-fixed .right-wrapper {margin-left:20%;}
 .all-content-wrapper .right-wrapper{ width:calc(100% - 20%)}

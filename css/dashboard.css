@@ -29,6 +29,7 @@ body {
 .all-content-wrapper .left-wrapper{ display: flex; flex-direction: column;}
 .all-content-wrapper.filter-fixed .filterby-wrapper{position: fixed;}
 .all-content-wrapper.filter-fixed .right-wrapper {margin-left:260px;}
+.all-content-wrapper.filter-fixed .right-wrapper { width:calc(100%)}
 .all-content-wrapper .right-wrapper{ width:calc(100% - 260px)}
 .inr-lakh{display: flex; justify-content: flex-end; align-items: flex-end; color: #bfbfbf; margin-bottom: 15px;}
 /*Wrapper Css*/
